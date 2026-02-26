@@ -1,0 +1,249 @@
+body {
+  background: #151d25;
+}
+
+.admin-landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #151d25;
+  color: #f5f5f5;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  padding: 2rem;
+}
+
+.admin-top-login {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 6px;
+  border: 2px solid #7c3aed;
+  background: transparent;
+  color: #7c3aed;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.admin-top-login:hover {
+  background: #7c3aed;
+  color: #fff;
+}
+
+.admin-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin-title {
+  font-size: 3rem;
+  color: #7c3aed;
+  position: relative;
+}
+
+.pro-badge {
+  font-size: 1rem;
+  color: #fff;
+  background: #7c3aed;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+.admin-heading {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.admin-desc {
+  font-size: 1rem;
+  color: #c0c0c0;
+  max-width: 500px;
+}
+
+.admin-btn-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.admin-btn-primary,
+.admin-btn-secondary {
+  position: relative;
+  overflow: hidden;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.admin-btn-primary {
+  background: linear-gradient(90deg, #7c3aed, #9d4edd);
+}
+
+.admin-btn-secondary {
+  background: linear-gradient(90deg, #ff6b6b, #ff3d3d);
+}
+
+/* Shine effect like Get Started button */
+.admin-btn-primary .shine,
+.admin-btn-secondary .shine {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.3);
+  transform: skewX(-20deg);
+  transition: all 0.5s;
+}
+
+.admin-btn-primary:hover .shine,
+.admin-btn-secondary:hover .shine {
+  left: 125%;
+}
+
+.admin-btn-primary:hover,
+.admin-btn-secondary:hover {
+  filter: brightness(1.1);
+}
+
+
+
+/* Admin Register form  */
+
+
+.admin-register-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #1b252e;
+  border-radius: 8px;
+  display: flex;    
+  flex-direction: column;
+  gap: 1rem;
+  color: #f5f5f5;
+}
+
+.admin-register-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.admin-input {
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #444c56;
+  background-color: #2a2f3a;
+  color: #f5f5f5;
+  font-size: 1rem;
+}
+
+.admin-input:focus {
+  outline: none;
+  border-color: #00d1b2;
+}
+
+.admin-btn-primary {
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00d1b2, #00a67f);
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.admin-btn-primary:hover {
+  filter: brightness(1.1);
+}
+
+
+
+/* admin Dashboard  */
+
+
+.admin-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: #151d25; /* app ka main background color */
+  color: #f5f5f5;
+  padding: 3rem;
+  text-align: center;
+}
+
+.admin-btn-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.admin-btn-primary,
+.admin-btn-secondary,
+.admin-top-login {
+  position: relative;
+  overflow: hidden;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.admin-btn-primary {
+  background: linear-gradient(90deg, #00d1b2, #00a67f);
+}
+
+.admin-btn-secondary {
+  background: linear-gradient(90deg, #ff6b6b, #ff3d3d);
+}
+
+.admin-top-login {
+  background: transparent;
+  border: 2px solid #7c3aed;
+  color: #7c3aed;
+}
+
+.admin-btn-primary:hover,
+.admin-btn-secondary:hover,
+.admin-top-login:hover {
+  filter: brightness(1.1);
+}
+
+/* Shine effect */
+.admin-btn-primary .shine,
+.admin-btn-secondary .shine {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255,255,255,0.3);
+  transform: skewX(-20deg);
+  transition: all 0.5s;
+}
+
+.admin-btn-primary:hover .shine,
+.admin-btn-secondary:hover .shine {
+  left: 125%;
+}
